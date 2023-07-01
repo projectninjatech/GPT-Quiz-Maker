@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT Quiz Maker</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content-area">
+            <label style="background-color: #2190ff;">Paste Your Content Here To Generate Quiz Using AI</label>
+            <textarea name="content-txt" id="content-txt" cols="30" rows="10"></textarea>
+            <button id="submit">Generate Quiz</button>
+        </div>
+
+        <div class="quiz-area">
+            <label style="background-color: rgb(45, 155, 118);">Generated Quiz</label>
+            <div class="loading-container">
+                <img src="/loading.svg" alt="Loading" class="loading-gif" />
+                <p class="loading-message">AI is generating quiz...</p>
+            </div>
+            <div id="score-box" class="score-box">
+                <p id="percentage"></p>
+                <p>Results</p>
+                <div class="result-heading">
+                    <div class="question-number-heading">Question</div>
+                    <div class="correct-answer-heading">Answer</div>
+                    <div class="user-answer-heading">User</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>

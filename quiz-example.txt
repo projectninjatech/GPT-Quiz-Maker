@@ -1,0 +1,68 @@
+# If answer property type is integer
+
+var responseData = {
+  quiz: [
+    {
+      question: 'What is the screen size of the ROG Ally?',
+      options: ['5in', '6in', '7in', '8in'],
+      answer: '7in'
+    },
+    {
+      question: 'What is the resolution of the ROG Ally display?',
+      options: ['1280x720', '1920x1080', '2560x1440', '3840x2160'],
+      answer: '1920x1080'
+    },
+    {
+      question: 'What type of touchscreen does the ROG Ally have?',
+      options: ['IPS', 'AMOLED', 'LCD', 'OLED'],
+      answer: 'IPS'
+    },
+    {
+      question: 'Which glass provides extra durability to the ROG Ally display?',
+      options: ['Gorilla Glass 3', 'Gorilla Glass 5', 'Gorilla Glass 6', 'Gorilla Glass Victus'],
+      answer: 'Gorilla Glass Victus'
+    },
+    {
+      question: 'What aspect ratio does the ROG Ally display have?',
+      options: ['4:3', '16:9', '18:9', '21:9'],
+      answer: '16:9'
+    }
+  ]
+};
+
+console.log(JSON.stringify(responseData, null, 2));
+
+
+#If answer property type is string
+
+var responseData = {
+  quiz: [
+    {
+      question: 'What is the screen size of the ROG Ally?',
+      options: ['5in', '6in', '7in', '8in'],
+      answer: 2
+    },
+    {
+      question: 'What is the resolution of the ROG Ally display?',
+      options: ['1280x720', '1920x1080', '2560x1440', '3840x2160'],
+      answer: 1
+    },
+    {
+      question: 'What type of touchscreen does the ROG Ally have?',
+      options: ['IPS', 'AMOLED', 'LCD', 'OLED'],
+      answer: 0
+    },
+    {
+      question: 'Which glass provides extra durability to the ROG Ally display?',
+      options: ['Gorilla Glass 3', 'Gorilla Glass 5', 'Gorilla Glass 6', 'Gorilla Glass Victus'],
+      answer: 3
+    },
+    {
+      question: 'What aspect ratio does the ROG Ally display have?',
+      options: ['4:3', '16:9', '18:9', '21:9'],
+      answer: 1
+    }
+  ]
+};
+
+console.log(JSON.stringify(responseData, null, 2));
